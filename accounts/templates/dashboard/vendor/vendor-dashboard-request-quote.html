@@ -1,0 +1,54 @@
+{% extends "dashboard/vendor/base.html" %}
+{% block content %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="dashboard-page-header">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <h3 class="dashboard-page-title">List Orderan</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-filter-row mb20">
+                            <div class="row">
+                                <div class="col-xl-3">
+                                    <select class="form-control wide" id="exampleFormControlSelect1">
+                                        <option>Pilih Produk Anda</option>
+                                        <option>Select Your Listing #1</option>
+                                        <option>Select Your Listing #2</option>
+                                        <option>Select Your Listing #3</option>
+                                        <option>Select Your Listing #4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card request-list-table table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Tanggal Pernikahan</th>
+                                        <th>Email</th>
+                                        <th>Telepon</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="requester-name">Jessica J. Titus</td>
+                                        <td class="wedding-date">26/10/2020</td>
+                                        <td class="requester-id">jessicatitus@gmail.com</td>
+                                        <td class="requester-phone">00000000</td>
+                                        <td class="requester-action"><a href="#" class="btn btn-outline-pink btn-xs ">delete</a></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+{% endblock %}

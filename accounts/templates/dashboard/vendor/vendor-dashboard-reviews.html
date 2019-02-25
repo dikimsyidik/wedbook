@@ -1,0 +1,110 @@
+{% extends "dashboard/vendor/base.html" %}
+{% block content %}
+{% load static %}
+            <div class="container">
+                <div class="dashboard-page-header">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h3 class="dashboard-page-title">Review</h3>
+                            <p>wdawdawd</p>
+                        </div>
+                        <div class="col-xl-3">
+                            <select class="form-control wide" id="exampleFormControlSelect1">
+                                <option>Pilih Produk Anda</option>
+                                <option>Select Your Listing #1</option>
+                                <option>Select Your Listing #2</option>
+                                <option>Select Your Listing #3</option>
+                                <option>Select Your Listing #4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-xl-4 col-lg-12 col-md-12 col-sm-6 col-12">
+                        <div class="card card-rating">
+                            <div class="card-body">
+                                <h5 class="mb30">Rating</h5>
+                                <div class="review-total">4.8 </div>
+                                <div class="review-text">Reviews</div>
+                                <span class="rated mt40  d-block"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa  fa-star"></i> <i class="fa fa-star-half"></i> </span>
+                                <small>4.8 rata-rata dalam 8 review</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="card review-summary-table table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Nama</th>
+                                        <th>Rating</th>
+                                        <th>Email</th>
+                                        <th>Waktu</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="review-summary-name">Jessica J. Titus</td>
+                                        <td class="review-summary-rating"> <span class="rated"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></span><span class="ml-2">5</span></td>
+                                        <td class="review-summary-id">jessicatitus@gmail.com</td>
+                                        <td class="review-summary-time">5 hours ago</td>
+                                        <td class="review-summary-action"><a class="btn btn-outline-pink btn-xs" data-toggle="collapse" id="example-one" data-text-swap="close" data-text-original="Details" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">Details  </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="12" class="expandable-info">
+                                            <div class="collapse expandable-collapse" id="collapseExample1">
+                                                <div class="row">
+                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <!-- review-user -->
+                                                        <div class="review-user">
+                                                            <div class="user-img"> <img src="images/review-pic-2.jpg" alt="star rating jquery" class="rounded-circle"></div>
+                                                            <div class="user-meta">
+                                                                <span class="user-name">Jessica J. Titus</span>
+                                                                <span class="user-review-date">11 May, 2018</span>
+                                                                <div class="given-review">
+                                                                    <span class="rated"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>                                                         </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- /.review-user -->
+                                                        <!-- review-descripttions -->
+                                                        <div class="review-descriptions">
+                                                            <p>Donec accumsan consequat massa non gravida. Morbi pharetra mollis tortor ac maximus. Nunc dapibus bibendum urna, in egestas dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra.Fusce ullamcorper sit amet augue a volutpat. Cras ultrices dictum ante vel iaculis. Aenean molestie molestie elementum. Nullam semper vel mauris et semper. </p>
+                                                            
+                                                        </div>
+                                                        <!-- /.review-descripttions -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
+    <script src="{% static "js/menumaker.min.js" %}"></script>
+    <script src="{% static "js/custom-script.js" %}"></script>
+    <script src="{% static "js/jquery.nice-select.min.js" %}"></script>
+    <script src="{% static "js/fastclick.js" %}"></script>
+    <script src="{% static "js/offcanvas.js" %}"></script>
+    <script>
+        $("#example-one, #example-two, #example-three, #example-four, #example-five, #example-six  ").on("click", function() {
+            var el = $(this);
+            el.text() == el.data("text-swap") ?
+                el.text(el.data("text-original")) :
+                el.text(el.data("text-swap"));
+        });
+        </script>
+{% endblock %}

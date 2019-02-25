@@ -1,0 +1,627 @@
+{% extends 'basic/base.html' %}
+{% load static %}
+{% block nav %}
+class="inpage"
+{% endblock %}
+{% block body_block %}
+    <!-- hero-section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 col-md-12 col-sm-12 col-12">
+                    <!-- search-block -->
+                    <div class="">
+                        <div class="text-center search-head">
+                            <h1 class="search-head-title">Penuhi Kebutuhan Pernikahan Anda</h1>
+                            <p  class="d-none d-xl-block d-lg-block d-sm-block">Cari vendor terbaik untuk momen bahagia Anda</p>
+                        </div>
+                        <!-- /.search-block -->
+                        <!-- search-form -->
+                        <div style="margin-left: 20%;margin-right: 20%" class="search-form">
+                            <form class="form-row">
+                                <div class="col-xl-8 col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <!-- select -->
+                                    <select class="wide">
+                                        <option value="Venue Type">Semua</option>
+                                        <option value="Venue">Tempat</option>
+                                    </select>
+                                </div>
+                                <!-- button -->
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                    <button class="btn btn-default btn-block" type="submit">Cari</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.search-form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.hero-section -->
+    <div class="space-medium pdb0">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-12 col-sm-12 col-12">
+                    <div class="section-title text-center">
+                        <!-- section title start-->
+                        <h2 class="mb10">Terbaru..!!</h2>
+                        <p>Ini dia update terbaru dari vendor kita :)</p>
+                    </div>
+                    <!-- /.section title start-->
+                </div>
+            </div>
+            <div class="venue-thumbnail-carousel">
+                <div class="owl-carousel owl-theme owl-venue-thumb">
+                    <div class="item">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="vendor-thumbnail">
+                                <!-- Vendor thumbnail -->
+                                <div class="vendor-img zoomimg">
+                                    <!-- Vendor img -->
+                                    <a href="#"><img src="{% static 'images/vendor-img-1.jpg' %}" alt=""  class="img-fluid"></a>
+                                    <div class="wishlist-sign"><a href="#" class="btn-wishlist"><i class="fa fa-heart"></i></a></div>
+                                </div>
+                                <!-- /.Vendor img -->
+                                <div class="vendor-content">
+                                    <!-- Vendor Content -->
+                                    <h2 class="vendor-title"><a href="" class="title">Outdoor</a></h2>
+                                    <p class="vendor-address">Garut, Indonesia</p>
+                                </div>
+                                <!-- /.Vendor Content -->
+                                <div class="vendor-meta">
+                                    <div class="vendor-meta-item vendor-meta-item-bordered">
+                                        <span class="vendor-price">
+                                    Rp. 2.000.000
+                                </span>
+                                        <span class="vendor-text">Harga</span></div>
+                                    <div class="vendor-meta-item vendor-meta-item-bordered">
+                                        <span class="vendor-guest">
+                                    120+
+                                </span>
+                                        <span class="vendor-text">Tamu</span>
+                                    </div>
+                                    <div class="vendor-meta-item vendor-meta-item-bordered">
+                                        <span class="rating-star">
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rate-mute"></i> 
+                                    </span>
+                                        <span class="rating-count vendor-text">(20)</span></div>
+                                </div>
+                            </div>
+                            <!-- /.Vendor thumbnail -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="vendor-thumbnail">
+                                <!-- Vendor thumbnail -->
+                                <div class="vendor-img zoomimg">
+                                    <!-- Vendor img -->
+                                    <a href="#"><img src="{% static 'images/vendor-img-2.jpg' %}" alt="" class="img-fluid"></a>
+                                    <div class="wishlist-sign"><a href="#" class="btn-wishlist"><i class="fa fa-heart"></i></a></div>
+                                </div>
+                                <!-- /.Vendor img -->
+                                <div class="vendor-content">
+                                    <!-- Vendor Content -->
+                                    <h2 class="vendor-title"><a href="#" class="title">Gedung</a></h2>
+                                    <p class="vendor-address">Bandung, Indonesia</p>
+                                </div>
+                                <!-- /.Vendor Content -->
+                                <div class="vendor-meta">
+                                    <div class="vendor-meta-item vendor-meta-item-bordered">
+                                        <span class="vendor-price">
+                                    Rp.3.000.000
+                                </span>
+                                        <span class="vendor-text">Harga</span></div>
+                                    <div class="vendor-meta-item vendor-meta-item-bordered">
+                                        <span class="vendor-guest">
+                                    120+
+                                </span>
+                                        <span class="vendor-text">Tamu</span>
+                                    </div>
+                                    <div class="vendor-meta-item vendor-meta-item-bordered">
+                                        <span class="rating-star">
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rate-mute"></i> 
+                                    </span>
+                                        <span class="rating-count vendor-text">(20)</span></div>
+                                </div>
+                            </div>
+                            <!-- /.Vendor thumbnail -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="vendor-thumbnail">
+                                <!-- Vendor thumbnail -->
+                                <div class="vendor-img zoomimg">
+                                    <!-- Vendor img -->
+                                    <a href="#"><img src="{% static 'images/vendor-img-3.jpg' %}" alt="" class="img-fluid"></a>
+                                    <div class="wishlist-sign"><a href="#" class="btn-wishlist"><i class="fa fa-heart"></i></a></div>
+                                </div>
+                                <!-- /.Vendor img -->
+                                <div class="vendor-content">
+                                    <!-- Vendor Content -->
+                                    <h2 class="vendor-title"><a href="#" class="title">Restoran</a></h2>
+                                    <p class="vendor-address">Garut, Indonesia</p>
+                                </div>
+                                <!-- /.Vendor Content -->
+                                <div class="vendor-meta">
+                                    <div class="vendor-meta-item vendor-meta-item-bordered">
+                                        <span class="vendor-price">
+                                    Rp. 3.000.000
+                                </span>
+                                        <span class="vendor-text">Harga</span></div>
+                                    <div class="vendor-meta-item vendor-meta-item-bordered">
+                                        <span class="vendor-guest">
+                                    120+
+                                </span>
+                                        <span class="vendor-text">Tamu</span>
+                                    </div>
+                                    <div class="vendor-meta-item vendor-meta-item-bordered">
+                                        <span class="rating-star">
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rate-mute"></i> 
+                                    </span>
+                                        <span class="rating-count vendor-text">(20)</span></div>
+                                </div>
+                            </div>
+                            <!-- /.Vendor thumbnail -->
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="vendor-thumbnail">
+                                <!-- Vendor thumbnail -->
+                                <div class="vendor-img zoomimg">
+                                    <!-- Vendor img -->
+                                    <a href="#"><img src="{% static 'images/vendor-img-2.jpg' %}" alt="" class="img-fluid"></a>
+                                    <div class="wishlist-sign"><a href="#" class="btn-wishlist"><i class="fa fa-heart"></i></a></div>
+                                </div>
+                                <!-- /.Vendor img -->
+                                <div class="vendor-content">
+                                    <!-- Vendor Content -->
+                                    <h2 class="vendor-title"><a href="#" class="title">Restoran</a></h2>
+                                    <p class="vendor-address">Garut, Gujarat.Indonesia</p>
+                                </div>
+                                <!-- /.Vendor Content -->
+                                <div class="vendor-meta">
+                                    <div class="vendor-meta-item vendor-meta-item-bordered">
+                                        <span class="vendor-price">
+                                    Rp. 2.000.000
+                                </span>
+                                        <span class="vendor-text">Harga</span></div>
+                                    <div class="vendor-meta-item vendor-meta-item-bordered">
+                                        <span class="vendor-guest">
+                                    120+
+                                </span>
+                                        <span class="vendor-text">Tamu</span>
+                                    </div>
+                                    <div class="vendor-meta-item vendor-meta-item-bordered">
+                                        <span class="rating-star">
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rated"></i>
+                                    <i class="fa fa-star rate-mute"></i> 
+                                    </span>
+                                        <span class="rating-count vendor-text">(20)</span></div>
+                                </div>
+                            </div>
+                            <!-- /.Vendor thumbnail -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. venue-thumbnail-section-->
+    <!-- venue-categoris-section-->
+    <div class="space-small">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-12 col-sm-12 col-12">
+                    <div class="section-title text-center">
+                        <!-- section title start-->
+                        <h2 class="mb10">Kategori</h2>
+                        <p>Apa saja yang Anda perlukan untuk pernikahan Anda?</p>
+                    </div>
+                    <!-- /.section title start-->
+                </div>
+            </div>
+            <div class="row">
+                <!-- venue-categoris-block-->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <div class="venue-categories-block zoomimg">
+                        <div class="venue-categories-img"> <a href="#"><img src="{% static 'images/venue_categories_img_1.jpg' %}" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Tempat</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <!-- venue-categoris-block-->
+                    <div class="venue-categories-block">
+                        <div class="venue-categories-img zoomimg"> <a href="#"><img src="images/venue_categories_img_2.jpg" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Dekorasi</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <!-- venue-categoris-block-->
+                    <div class="venue-categories-block">
+                        <div class="venue-categories-img zoomimg"> <a href="#"><img src="images/venue_categories_img_3.jpg" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Gaun</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <!-- venue-categoris-block-->
+                    <div class="venue-categories-block ">
+                        <div class="venue-categories-img zoomimg"> <a href="#"><img src="images/venue_categories_img_4.jpg" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Make-Up</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <!-- venue-categoris-block-->
+                    <div class="venue-categories-block ">
+                        <div class="venue-categories-img zoomimg"> <a href="#"><img src="images/venue_categories_img_6.jpg" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Catering</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <!-- venue-categoris-block-->
+                    <div class="venue-categories-block">
+                        <div class="venue-categories-img zoomimg "> <a href="#"><img src="images/venue_categories_img_5.jpg" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Fotografer & Videografer</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <!-- venue-categoris-block-->
+                    <div class="venue-categories-block">
+                        <div class="venue-categories-img zoomimg "> <a href="#"><img src="images/venue_categories_img_2.jpg" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Kue</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <!-- venue-categoris-block-->
+                    <div class="venue-categories-block">
+                        <div class="venue-categories-img zoomimg "> <a href="#"><img src="images/venue_categories_img_2.jpg" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Henna</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <!-- venue-categoris-block-->
+                    <div class="venue-categories-block">
+                        <div class="venue-categories-img zoomimg "> <a href="#"><img src="images/venue_categories_img_2.jpg" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Bunga</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <!-- venue-categoris-block-->
+                    <div class="venue-categories-block">
+                        <div class="venue-categories-img zoomimg "> <a href="#"><img src="images/venue_categories_img_2.jpg" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Hiburan</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <!-- venue-categoris-block-->
+                    <div class="venue-categories-block">
+                        <div class="venue-categories-img zoomimg "> <a href="#"><img src="images/venue_categories_img_2.jpg" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Master of Ceremony (MC)</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <!-- venue-categoris-block-->
+                    <div class="venue-categories-block">
+                        <div class="venue-categories-img zoomimg "> <a href="#"><img src="images/venue_categories_img_2.jpg" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Perhiasan</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <!-- venue-categoris-block-->
+                    <div class="venue-categories-block">
+                        <div class="venue-categories-img zoomimg "> <a href="#"><img src="images/venue_categories_img_2.jpg" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Undangan</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <!-- venue-categoris-block-->
+                    <div class="venue-categories-block">
+                        <div class="venue-categories-img zoomimg "> <a href="#"><img src="images/venue_categories_img_2.jpg" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Seserahan</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <!-- venue-categoris-block-->
+                    <div class="venue-categories-block">
+                        <div class="venue-categories-img zoomimg "> <a href="#"><img src="images/venue_categories_img_2.jpg" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Cenderamata</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <!-- venue-categoris-block-->
+                    <div class="venue-categories-block">
+                        <div class="venue-categories-img zoomimg "> <a href="#"><img src="images/venue_categories_img_2.jpg" alt="" class="img-fluid"></a>
+                            <div class="venue-categories-overlay">
+                                <h3 class="mb0"><a href="#" class="venue-categories-title">Wedding Organizer (WO)</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.venue-categoris-block-->
+                </div>
+            </div>
+            <!-- venue-categoris-btn -->
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center mt60"><a href="{% url 'produk' %}" class="btn btn-default btn-lg">Lihat Semua Kategori</a></div>
+            </div>
+            <!-- /.venue-categoris-btn -->
+        </div>
+    </div>
+    <!-- /.venue-categoris-section-->
+        <!-- real-wedding-section-->
+        <div class="space-small2">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="section-title text-center">
+                            <!-- section title start-->
+                            <h2 class="mb10">Testimoni</h2>
+                            <p>Ini dia testimoni dari pasangan wedbook yang bisa menjadi insprirasi buat Anda juga yaa</p>
+                        </div>
+                        <!-- /.section title start-->
+                    </div>
+                </div>
+                <div class="row">
+                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="real-wedding-block">
+                        <!-- real wedding block -->
+                        <div class="real-wedding-img zoomimg">
+                            <!-- real wedding img -->
+                            <a href="#"><img src="{% static 'images/real-wedding-img-1.jpg' %}" alt="Wedding Vendor & Supplier Directory HTML Template "  class="img-fluid"></a>
+                        </div>
+                        <!-- /.real wedding img -->
+                        <div class="real-wedding-content ">
+                            <!-- real wedding content -->
+                            <h3 class="real-wedding-title"><a href="#" class="title">Vanessa & Ryan</a></h3>
+                            <div class="real-wedding-meta"><span class="real-wedding-date">07 May, 2018</span> 
+                            <span class="real-wedding-place pl-3"><i class="fas fa-map-marker-alt pr-1"></i>Surat</span>
+                            </div>
+                        </div>
+                        <!-- /.real wedding img -->
+                    </div>
+                    <!-- /.real wedding block -->
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="real-wedding-block">
+                        <!-- real wedding block -->
+                        <div class="real-wedding-img zoomimg">
+                            <!-- real wedding img -->
+                            <a href="#"><img src="{% static 'images/real-wedding-img-4.jpg' %}" alt="Wedding Vendor & Supplier Directory HTML Template "  class="img-fluid"></a>
+                        </div>
+                        <!-- /.real wedding img -->
+                        <div class="real-wedding-content">
+                            <!-- real wedding content -->
+                            <h3 class="real-wedding-title"><a href="#" class="title">Rahul & Pooja</a></h3>
+                           <div class="real-wedding-meta"><span class="real-wedding-date">10 May, 2018</span> 
+                            <span class="real-wedding-place pl-3"><i class="fas fa-map-marker-alt pr-1"></i>Ahmedabad</span>
+                           </div>
+                        </div>
+                        <!-- /.real wedding img -->
+                    </div>
+                    <!-- /.real wedding block -->
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="real-wedding-block">
+                        <!-- real wedding block -->
+                        <div class="real-wedding-img zoomimg">
+                            <!-- real wedding img -->
+                            <a href="#"><img src="{% static 'images/real-wedding-img-2.jpg' %}" alt="Wedding Vendor & Supplier Directory HTML Template "  class="img-fluid"></a>
+                        </div>
+                        <!-- /.real wedding img -->
+                        <div class="real-wedding-content">
+                            <!-- real wedding content -->
+                            <h3 class="real-wedding-title"><a href="#" class="title">Shreena & Dhanesh</a></h3>
+                         <div class="real-wedding-meta"><span class="real-wedding-date">12 May, 2018</span> 
+                            <span class="real-wedding-place pl-3"><i class="fas fa-map-marker-alt pr-1"></i>Pune</span>
+                        
+                         </div>
+                        </div>
+                        <!-- /.real wedding img -->
+                    </div>
+                    <!-- /.real wedding block -->
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                        <a href="#" class="btn btn-default btn-lg">Lihat Semua Testimoni</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- /.real-wedding-section-->
+    <!-- feature-section-->
+    <div class="bg-white space-medium">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-12 col-sm-12 col-12">
+                    <div class="section-title text-center">
+                        <!-- section title start-->
+                        <h2 class="mb10">Bagaimana Anda Bisa Menjadi Pasangan WedBook?</h2>
+                        <p>Mudah dan sederhana</p>
+                    </div>
+                    <!-- /.section title start-->
+                </div>
+            </div>
+            <div class="row">
+                <!-- feature-block-->
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feature feature-icon-block">
+                        <div class="feature-icon"><i class="fa fa-search" id="fa"></i></div>
+                        <div class="feature-content">
+                            <h3 class="mb-3">Pilih Kebutuhan Pernikahan Anda</h3>
+                            <p>Dapatkan semua kebutuhan pernikahan anda disini</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.feature-block-->
+                <!-- feature-block-->
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feature feature-icon-block">
+                        <div class="feature-icon"> <i class="fa fa-money-bill-alt" id="fa"></i></div>
+                        <div class="feature-content">
+                            <h3 class="mb-3">Booking Vendor Pilihan Anda</h3>
+                            <p>Hubungi vendor untuk pastikan semua kebutuhan tersedia dihari bahagia anda</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.feature-block-->
+                <!-- feature-block-->
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="feature feature-icon-block">
+                        <div class="feature-icon"><i class="icon icon-025-groom icon-3x icon-default"></i></div>
+                        <div class="feature-content">
+                            <h3 class="mb-3">Rayakan Pernikahan Anda</h3>
+                            <p>Rayakan pernikahan impian anda</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.feature-block-->
+            </div>
+        </div>
+    </div>
+    <!-- /.feature-section-->
+    <!-- blog-post-section -->
+    <div class="space-medium bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-12 col-sm-12 col-12">
+                    <div class="section-title text-center">
+                        <!-- section title start-->
+                        <h2 class="mb10">Wedding Tips and News</h2>
+                        <p> The ultimate wedding guide and tips for wedding couples.</p>
+                    </div>
+                    <!-- /.section title start-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="post-block text-center">
+                        <div class="post-img mb30 zoomimg">
+                            <a href="#"><img src="images/post-img-1.jpg" alt="" class="img-fluid"></a>
+                        </div>
+                        <h4><a href="#" class="title">Top 10 Wedding Tips for Groom & Bride</a></h4>
+                        <!-- post block -->
+                        <div class="meta">
+                            <span class="meta-category">Photography</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="post-block text-center">
+                        <div class="post-img mb30 zoomimg">
+                            <a href="#"><img src="images/post-img-2.jpg" alt="" class="img-fluid"></a>
+                        </div>
+                        <h4><a href="#" class="title">Top 10 Wedding Dress Expert Collections</a></h4>
+                        <!-- post block -->
+                        <div class="meta">
+                            <span class="meta-category">Wedding Planning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="post-block text-center">
+                        <div class="post-img mb30 zoomimg">
+                            <a href="#"><img src="images/post-img-3.jpg" alt="" class="img-fluid"></a>
+                        </div>
+                        <h4><a href="#" class="title">Best Wedding Destination & Venues 2019</a></h4>
+                        <!-- post block -->
+                        <div class="meta">
+                            <span class="meta-category">Flowers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="post-block text-center">
+                        <div class="post-img mb30 zoomimg">
+                            <a href="#"><img src="images/post-img-4.jpg" alt="" class="img-fluid"></a>
+                        </div>
+                        <h4><a href="#" class="title">Happy Wedding Couple  Smile Enjoying  Wine</a></h4>
+                        <!-- post block -->
+                        <div class="meta">
+                            <span class="meta-category">Catering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.blog-post-section -->
+    
+{% endblock %}

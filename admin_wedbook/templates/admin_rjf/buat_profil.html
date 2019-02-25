@@ -1,0 +1,328 @@
+{% extends 'admin_rjf/base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static "assets/css/bootstrap-fileupload.min.css" %}" />
+
+
+        <!--PAGE CONTENT -->
+<form method="POST" enctype="multipart/form-data" action=".">{% csrf_token %}
+        <div id="content">
+            
+
+            <div class="inner" style="min-height:auto;">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Edit</h2>
+                    </div>
+                </div>
+                <hr/>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box dark">
+                            <header>
+                                <div class="icons"><i class="icon-edit"></i></div>
+                                <h5>Tentang Kami</h5>
+                                <div class="toolbar">
+                                    <ul class="nav">
+                                        <li>
+                                            <a class="accordion-toggle minimize-box" data-toggle="collapse" href="#div-1">
+                                                <i class="icon-chevron-up"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </header>
+                            <div id="div-1" class="accordion-body collapse body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="fileupload fileupload-new" data-provides="fileupload">
+                                            <div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;"></div>
+                                            <div>
+                                                <span class="btn btn-file btn-success"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span>
+                                                {{ form.foto_perusahaan }}</span>
+                                                <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7" style="padding-top: 2%">
+                                        
+                                            <div class="form-group">
+                                                {{ form.deskripsi_perusahaan }}
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box dark">
+                            <header>
+                                <div class="icons"><i class="icon-edit"></i></div>
+                                <h5>Produk Unggulan</h5>
+                                <div class="toolbar">
+                                    <ul class="nav">
+                                        <li>
+                                            <a class="accordion-toggle minimize-box" data-toggle="collapse" href="#div-2">
+                                                <i class="icon-chevron-up"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </header>
+                            <div id="div-2" class="accordion-body collapse body">
+                                <div class="row">
+                                    <h4 style="text-align: center;">Produk 1</h4>
+                                    <div class="col-lg-4">
+                                        <div class="fileupload fileupload-new" data-provides="fileupload">
+                                            <div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;"></div>
+                                            <div>
+                                                <span class="btn btn-file btn-success"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span>{{ form.foto1 }}</span>
+                                                <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7" style="padding-top: 2%">
+                                        
+                                            <div class="form-group">
+                                                {{ form.nama_produk }}
+                                            </div>
+                                        
+                                        
+                                            <div class="form-group">
+                                                {{ form.deskripsi_produk }}
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <h4 style="text-align: center;">Produk 1</h4>
+                                    <div class="col-lg-4">
+                                        <div class="fileupload fileupload-new" data-provides="fileupload">
+                                            <div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;"></div>
+                                            <div>
+                                                <span class="btn btn-file btn-success"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span>{{ form.foto2 }}</span>
+                                                <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7" style="padding-top: 2%">
+                                        
+                                            <div class="form-group">
+                                                {{ form.nama_produk2 }}
+                                            </div>
+                                        
+                                        
+                                            <div class="form-group">
+                                                {{ form.deskripsi_produk2 }}
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <h4 style="text-align: center;">Produk 1</h4>
+                                    <div class="col-lg-4">
+                                        <div class="fileupload fileupload-new" data-provides="fileupload">
+                                            <div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;"></div>
+                                            <div>
+                                                <span class="btn btn-file btn-success"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span>{{ form.foto3 }}</span>
+                                                <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7" style="padding-top: 2%">
+                                        
+                                            <div class="form-group">
+                                                {{ form.nama_produk3 }}
+                                            </div>
+                                        
+                                        
+                                            <div class="form-group">
+                                                {{ form.deskripsi_produk3 }}
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="box dark">
+                            <header>
+                                <div class="icons"><i class="icon-edit"></i></div>
+                                <h5>Testimonials</h5>
+                                <div class="toolbar">
+                                    <ul class="nav">
+                                        <li>
+                                            <a class="accordion-toggle minimize-box" data-toggle="collapse" href="#div-4">
+                                                <i class="icon-chevron-up"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </header>
+                            <div id="div-4" class="accordion-body collapse body">
+                                <h4>Testimoni 1</h4>
+                                
+                                    <div class="form-group">
+                                            <label for="t1" class="control-label col-lg-4">Nama dan pekerjaan</label>
+                                        <div class="col-lg-8">
+                                            {{ form.nama_dan_pekerjaan }}
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="t2" class="control-label col-lg-4">Nama Produk</label>
+                                        <div class="col-lg-8">
+                                            {{ form.project_dan_asal }}
+                                            </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="autosize" class="control-label col-lg-4">Deskripsi</label>
+                                        <div class="col-lg-8">
+                                            {{ form.komentar }}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4>Testimoni 2</h4>
+                                 
+                                    <div class="form-group">
+                                            <label for="t1" class="control-label col-lg-4">Nama dan pekerjaan</label>
+                                        <div class="col-lg-8">
+                                            {{ form.nama_dan_pekerjaan2 }}
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="t2" class="control-label col-lg-4">Nama Produk</label>
+                                        <div class="col-lg-8">
+                                            {{ form.project_dan_asal2 }}
+                                            </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="autosize" class="control-label col-lg-4">Deskripsi</label>
+                                        <div class="col-lg-8">
+                                            {{ form.komentar3 }}
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                      
+                                <h4>Testimoni 3</h4>
+                                 
+                                <div class="form-group">
+                                            <label for="t1" class="control-label col-lg-4">Nama dan pekerjaan</label>
+                                        <div class="col-lg-8">
+                                            {{ form.nama_dan_pekerjaan3 }}
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="t2" class="control-label col-lg-4">Nama Produk</label>
+                                        <div class="col-lg-8">
+                                            {{ form.project_dan_asal3 }}
+                                            </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="autosize" class="control-label col-lg-4">Deskripsi</label>
+                                        <div class="col-lg-8">
+                                            {{ form.komentar3 }}
+                                        </div>
+                                    </div> 
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-lg-12">
+                    <div class="box dark">
+                        <header>
+                                            <div class="icons"><i class="icon-edit"></i></div>
+                                            <h5>Kontak</h5>
+                                            <div class="toolbar">
+                                                <ul class="nav">
+                                                    <li>
+                                                        <a class="accordion-toggle minimize-box" data-toggle="collapse" href="#div-5">
+                                                            <i class="icon-chevron-up"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                        </header>
+                        <div id="div-5" class="accordion-body collapse body">
+                            <h4>Alamat</h4>
+                                            
+                            <div class="form-group">
+                                <label for="k1" class="control-label col-lg-4">No. Tlp/HP</label>
+                                <div class="col-lg-8">
+                                {{ form.no_hp }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="k8" class="control-label col-lg-4">WhatsApp</label>
+                                <div class="col-lg-8">
+                                {{ form.whatsapp }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="autosize" class="control-label col-lg-4">Alamat 1</label>
+                                <div class="col-lg-8">
+                                {{ form.alamat }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="k2" class="control-label col-lg-4">Email</label>
+                                <div class="col-lg-8">
+                                {{ form.email }}</div>
+                            </div>
+                            <h4>Media Sosial</h4>
+                            <div class="form-group">
+                                <label for="k3" class="control-label col-lg-4">Facebook</label>
+                                <div class="col-lg-8">
+                                {{ form.facebook }}</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="k3" class="control-label col-lg-4">Twitter</label>
+                                
+                                <div class="col-lg-8">{{ form.twitter }}</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="k5" class="control-label col-lg-4">Instagram</label>
+                                <div class="col-lg-8">
+                                {{ form.instagram }}</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="k6" class="control-label col-lg-4">Google+</label>
+                                <div class="col-lg-8">
+                                {{ form.google_plus }}</div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <!--END PAGE CONTENT -->
+                
+                <button type="submit" class="btn btn-success">Selesai</button>
+                
+
+            </div>
+        </div>
+        </form>
+           
+       
+        
+{% endblock %}
+

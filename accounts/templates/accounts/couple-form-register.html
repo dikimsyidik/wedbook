@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Wedbook</title>
+    <!-- Bootstrap -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- FontAwesome icon -->
+     <link href="{% static "fontawesome/css/fontawesome-all.css" %}" rel="stylesheet">
+    <!-- Fontello icon -->
+    <link href="{% static "fontello/css/fontello.css" %}" rel="stylesheet">
+      <!-- Favicon icon -->
+     <link rel="shortcut icon" type="image/x-icon" href="{% static "images/w.png" %}">
+    <!-- Style CSS -->
+    <link href="{% static "css/style2.css" %}" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<!-- couple-sign up -->
+
+<body class="couple-bg-image">
+    <div class="couple-form">
+        <div class="container">
+            <div class="row ">
+                <div class="offset-xl-3 col-xl-6 offset-lg-3 col-lg-6 col-md-12 col-sm-12 col-12  ">
+                    <!-- st-tab -->
+                    <div class="st-tab">
+                        <div class="tab-content" id="myTabContent">
+                                <div class="container">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                        <!-- form-heading-title -->
+                                        <h3 style="text-align: center">Dapatkan Semua Kebutuhan Pernikahan Anda</h3>
+                                        <!-- /.form-heading-title -->
+                                        <!-- register-form -->
+                                        <form>
+                                            <!-- form -->
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                    <!-- Text input-->
+                                                    <div class="form-group">
+                                                        <label class="control-label sr-only" for="name"></label>
+                                                        <input id="name" type="text" name="name" placeholder="Nama" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                    <!-- Text input-->
+                                                    <div class="form-group service-form-group">
+                                                        <label class="control-label sr-only" for="email"></label>
+                                                        <input id="email" type="email" placeholder="Email" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                    <!-- Text input-->
+                                                    <div class="form-group service-form-group">
+                                                        <label class="control-label sr-only" for="passwordregister"></label>
+                                                        <input id="passwordregister" type="passwordregister" name="password" placeholder="Password" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <!-- Text input-->
+                                                    <div class="form-group">
+                                                        <label class="control-label sr-only" for="weddingdate">Tanggal Pernikahan</label>
+                                                        <input id="weddingdate" name="weddingdate" type="text" placeholder="Wedding Date" class="form-control input-md" required="">
+                                                        <div class="venue-form-calendar"><i class="far fa-calendar-alt"></i></div>
+                                                    </div>
+                                                </div>
+                                                <!-- Button -->
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                    <button type="submit" name="singlebutton" class="btn btn-default">Buat Akun</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!--/.form -->
+                                        <p class="mt-2"> Sudah punya akun? <a href="#" class="wizard-form-small-text"> Login</a></p>
+                                    </div>
+                                </div>
+                            <!-- /.register-form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.couple-sign up -->
+     
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+      <!-- jquery-ui -->
+    <script src="js/jquery-ui.js"></script>
+   <script src="js/custom-script.js"></script>
+    
+</body>
+
+
+</html>

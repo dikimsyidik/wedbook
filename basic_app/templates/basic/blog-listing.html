@@ -1,0 +1,135 @@
+{% extends 'basic/base.html' %}
+{% load static %}
+{% block nav2 %}
+class="inpage"
+{% endblock %}
+{% block body_block %}
+    <!-- /.page-header -->
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                    <div class="row">
+                        
+                        {% for post in blog %}
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="post-block">
+                                <!-- post vertical block -->
+                                <div class="post-img zoomimg">
+                                    <a href="#"><img src="{{ post.post_thumbnail.url }}" alt="" class="img-fluid"></a>
+                                </div>
+                                <div class="post-content">
+                              <h2 class="post-heading"><a href="#" class="post-title">{{ post.tittle }}</a></h2>
+                                    <p class="meta">
+                                        <span class="meta-posted-by"><i class="fas fa-user"></i> By <a href="#">Admin</a></span>
+                                        <span class="meta-date"><i class="fas fa-calendar-alt"></i> 08 May, 2018</span>
+                                    </p>
+                                    <p> {{ post.sub_tittle }}</p>
+                                    <a href="/blog/{{ post.slug }}" class="btn-default-link">Read More</a>
+                                </div>
+                            </div>
+                            <!-- /.post vertical block -->
+                        </div>
+                        {% endfor %}
+                        <!-- post paginations -->
+
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="mb60 mt20">
+                                <nav aria-label="Page navigation example">
+                                {% if blog.has_other_pages %}
+                                    <ul class="pagination">
+                                        {% if blog.has_previous %}
+                                        <li class="page-item"><a class="page-link" href="?page={{ blog.previous_page_number }}">Previous</a></li>
+                                        {% endif %}
+                                        {% for i in blog.paginator.page_range %}
+                                            {% if blog.number == i %}
+                                                <li class="page-item active"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                                            {% else %}
+                                                <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+
+                                             {% endif %}
+                                        {% endfor %}
+                                        {% if blog.has_next %}
+                                            <li class="page-item"><a class="page-link" href="?page={{ blog.next_page_number }}">Next</a></li>
+                                        {% endif %}
+                                    </ul>
+                                {% endif %}
+                                </nav>
+
+                            </div>
+                        </div>
+                        <!-- /.post paginations -->
+                    </div>
+                </div>
+                <!-- /. blog post -->
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="sidebar">
+                        <div class="widget widget-search">
+                            <!-- widget-search -->
+                            <h3 class="widget-title">Search</h3>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Cari . . ." aria-label="search here" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-default" type="button" id="button-addon2">Cari</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.widget -->
+                        <!-- widget-categories -->
+                        <div class="widget widget-category">
+                            <h3 class="widget-title">Kategori</h3>
+                            <ul class="angle">
+                                <li><a href="#">Perencanaan Pernikahan</a></li>
+                                <li><a href="#">Fotografer</a></li>
+                                <li><a href="#">Dekorasi</a></li>
+                                <li><a href="#">Kue</a></li>
+                                <li><a href="#">Catering</a></li>
+                                <li><a href="#">Mas Kawin</a></li>
+                                <li><a href="#">Gaun Pengantin</a></li>
+                                <li><a href="#">Tempat Pernikahan</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.widget-categories -->
+                        <!-- widget-recent-post -->
+                        <div class="widget widget-recent-post">
+                            <h3 class="widget-title">Postingan Terbaru</h3>
+                            <ul class="">
+                                <!-- recent-post-block -->
+                                {% for artikel in artikels %}
+                                <li>
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                            <div class="recent-post-img zoomimg">
+                                                <a href="#"><img src="{{ artikel.post_thumbnail.url }}" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
+                                            <div class="recent-post-content">
+                                                <h4 class="recent-title"><a href="#">{{ artikel.title }}</a></h4>
+                                                <p class="meta font-italic">{{ artikel.publish_date }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <!-- widget-archives -->
+                        <div class="widget widget-archives">
+                            <h3 class="widget-title">Arsip</h3>
+                            <ul class="angle">
+                                <li><a href="#">Januari</a></li>
+                                <li><a href="#">Februari</a></li>
+                                <li><a href="#">Juni</a></li>
+                                <li><a href="#">Juli</a></li>
+                                <li><a href="#">Agustus</a></li>
+                                <li><a href="#">September</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.widget-archives -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
